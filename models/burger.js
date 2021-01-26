@@ -14,7 +14,7 @@ const burger = {
   },
 
   updateOne:function(objColVals, condition, cb){
-    orm.updateOne('burgers',objColVals, condition,function(){
+    orm.updateOne('burgers',objColVals, condition,function(res){
       cb(res);
     })
   }

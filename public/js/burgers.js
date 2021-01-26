@@ -20,4 +20,21 @@ $(function(){
     );
   });
 
+  $(".toDevour").on("click",function(event){
+    let id = $(this).data("id");
+    let devourStatus = {
+      devoured: 1
+    };
+    $.ajax("/api/burgers/" +id,{
+      type:"PUT",
+      data:devourStatus
+    }).then(
+      function(){
+        console.log("Devoured one burger!");
+        location.reload();
+      }
+    )
+  })
+
+
 });

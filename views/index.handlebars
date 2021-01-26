@@ -5,21 +5,20 @@
     <div class="col-6">
       <ul>
         {{#each burgers}}
+        {{#unless devoured}}
         {{> burgers/burger-block}}
-        {{!-- {{#unless devoured}}
-        {{> burgers/burger-block devoured=false}}
-        {{/unless}} --}}
+        {{/unless}}
         {{/each}}
       </ul>
     </div>
     <div class="col-6">
-      {{!-- <ul>
+      <ul>
         {{#each burgers}}
         {{#if devoured}}
-        {{> burgers/burger-block devoured=true}}
+        {{> burgers/burger-block}}
         {{/if}}
         {{/each}}
-      </ul> --}}
+      </ul>
     </div>
   </div>
 
