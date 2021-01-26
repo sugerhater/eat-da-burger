@@ -57,7 +57,7 @@ const orm = {
 
 
   insertOne:function(table,cols,vals,cb){
-    const queryString = "INSERT INTO" +table;
+    let queryString = "INSERT INTO " +table;
     queryString += " (";
     queryString += cols.toString();
     queryString += ") ";
@@ -67,7 +67,7 @@ const orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, vals,function(err,res){
+    connection.query(queryString, vals, function(err,result){
       if (err) throw err;
 
       cb (result);
@@ -77,7 +77,7 @@ const orm = {
   },
 
   updateOne:function(table, objColVals, condition, cb){
-    const queryString = "UPDATE " + table;
+    let queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
