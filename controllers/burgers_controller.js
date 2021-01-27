@@ -1,5 +1,4 @@
 const express = require('express');
-const cat = require('../../../../original-homework1/osu-col-fsf-pt-10-2020-u-c/13-MVC/01-Activities/17-CatsApp/Solved/models/cat.js');
 
 const router = express.Router();
 

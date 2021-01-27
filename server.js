@@ -1,6 +1,6 @@
 const express = require('express');
 
-var PORT = process.env.PORT || 3000||"hwr4wkxs079mtb19.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
