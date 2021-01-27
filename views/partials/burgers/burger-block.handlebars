@@ -1,8 +1,12 @@
 <li>
   {{!-- // if the burger is not devoured put in this list
   // -- give btton to devoured --}}
-  {{name}}{{burger_name}}<p>test</p>
-  <button class="toDevour" data-id="{{id}}" data-devour="{{devoured}}">Devour</button>
+{{burger_name}}
+
+    {{#unless devoured}}
+  <button class="toDevour" data-id="{{id}}" data-devour="{{devoured}}">Devour!
+    </button>
+    {{else}}{{/unless}}
   {{!-- <button class="toDevour" data-id="{{this.id}}" data-devour="{{devoured}}">Devour</button> --}}
 
 </li>

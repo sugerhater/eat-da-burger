@@ -3,3 +3,14 @@ li {
   margin: 5px;
   background: #faebd7;
 }
+
+.toDevour{
+  float: right;
+}
+
+form{
+  text-align:center;
+}
+h1{
+  text-align:center;
+}
